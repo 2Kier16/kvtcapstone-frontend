@@ -8,10 +8,11 @@ export default function addInterest(props) {
   const [author, setAuthor] = useState("");
   const [description, setDescription] = useState("");
 
-  const postBook = (event) => {
+  const postInterest = (event) => {
     axios
       .post(
-        "http://localhost:5000/interest/add",
+        "https://kcapstone-backend.herokuapp.com/interest/add",
+
         {
           interest: interest,
           zodiac: zodiac,
@@ -45,7 +46,7 @@ export default function addInterest(props) {
         submit.
       </h3>
 
-      <form className="add-interest-form" onSubmit={postBook}>
+      <form className="add-interest-form" onSubmit={postInterest}>
         <input
           className="add-interest-form-input"
           onChange={(event) => setInterest(event.target.value)}

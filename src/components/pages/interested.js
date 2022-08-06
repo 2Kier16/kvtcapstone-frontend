@@ -18,7 +18,7 @@ export default class Interests extends Component {
   }
   getInterests() {
     axios
-      .get("http://localhost:5000/interests", {
+      .get("https://kcapstone-backend.herokuapp.com/interests", {
         headers: { "Access-Control-Allow-Origin": "*" },
       })
       .then((response) => {
@@ -30,23 +30,23 @@ export default class Interests extends Component {
       });
   }
 
-  getOther() {
-    axios
-      .get("http://127.0.0.1:5000/interests", {
-        headers: { "Access-Control-Allow-Origin": "*" },
-      })
-      .then((response) => {
-        console.log(response);
-        this.setState({ interests: response.data });
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }
+  // getOther() {
+  //   axios
+  //     .get("https://kcapstone-backend.herokuapp.com/interests", {
+  //       headers: { "Access-Control-Allow-Origin": "*" },
+  //     })
+  //     .then((response) => {
+  //       console.log(response);
+  //       this.setState({ interests: response.data });
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }
 
   componentDidMount() {
     this.getInterests();
-    this.getOther();
+    // this.getOther();
   }
 
   renderInterests() {

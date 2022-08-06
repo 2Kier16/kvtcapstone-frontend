@@ -1,13 +1,6 @@
-import axios from "axios";
 import React from "react";
 
 export default function interest(props) {
-  const post = () => {
-    axios
-      .delete("http://127.0.0.1:5000/interest/${props.interestData.id}")
-      .then((response) => console.log("success", response));
-  };
-
   return (
     <div className="infoListContainer">
       <h5>

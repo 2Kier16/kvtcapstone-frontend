@@ -1,0 +1,51 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
+  justify-items: flex-start;
+  align-items: center;
+  height: 100vh;
+
+  .pyramid {
+    grid-row: 2/3;
+    margin-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .triangle {
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .picture {
+      img {
+        height: 520px;
+      }
+    }
+
+    .react-icon a {
+      display: grid;
+      justify-content: center;
+      margin-top: 2px;
+      // margin-bottom: 10px;
+
+      color: rgba(16, 15, 15, 0.745);
+      opacity: 0.8;
+
+      &:hover {
+        color: rgb(255, 238, 46);
+      }
+    }
+  }
+  .label p {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: rgb(80, 146, 239);
+    font-size: 5em;
+  }
+}

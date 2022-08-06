@@ -1,0 +1,101 @@
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .bio-page-wrapper {
+    flex-direction: column;
+    height: 800px;
+    .leftSide-column,
+    .rightSide-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .animated_container {
+    flex-direction: column;
+    height: 1300px;
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .knavigation-hub {
+    flex-direction: column;
+    height: 1300px;
+    .items-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .interest-container {
+    flex-direction: column;
+    height: 1300px;
+    .left-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .navbar {
+    &-links {
+      padding: 5px;
+      margin-top: -122.5px;
+      height: 110px;
+      width: 120px;
+      gap: 2.5px;
+
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .bio-page-wrapper {
+    flex-direction: column;
+    height: 800px;
+    .leftSide-column,
+    .rightSide-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .animated_container {
+    flex-direction: column;
+    height: 1300px;
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .knavigation-hub {
+    flex-direction: column;
+    height: 1300px;
+    .items-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .interest-container {
+    flex-direction: column;
+    height: 1300px;
+    .left-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

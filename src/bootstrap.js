@@ -9,6 +9,7 @@ import Contacts from "./components/pages/contacts";
 
 import "./style/main.scss";
 import Navbar from "./components/navigation-bar/navbar";
+
 function main() {
   ReactDOM.render(
     <BrowserRouter>

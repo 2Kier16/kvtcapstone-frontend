@@ -35,7 +35,7 @@ export default class home extends Component {
             </a>
           </div>
 
-          <div className="item col-sm-l">
+          <div className="item col-l">
             <figure>
               <img src="../../../static/assets/images/hello.jpg" />
             </figure>
@@ -44,7 +44,7 @@ export default class home extends Component {
               <TiPointOfInterest /> Visiter Info
             </a>
           </div>
-          <div className="item col-sm-r">
+          <div className="item col-r">
             <figure>
               <img src="../../../static/assets/images/1.png" />
             </figure>

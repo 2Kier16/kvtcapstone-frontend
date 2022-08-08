@@ -19,7 +19,7 @@ export default function () {
 
         <div className="mini-bio">
           Hi, <br />
-          I'm Kier, Nice to meet your.
+          I'm Kier, Nice to meet you. I hope you like my capstone project.
           <div>&nbsp;</div>I love music and hope to one day release an album. On
           each page you will here some of the samples that i have made. Have a
           bless Day!, & here is some Lorem ipsum for your viewing pleasure until

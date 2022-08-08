@@ -15,6 +15,11 @@
   }
 
   .triangle {
+    background: url(../../static/./assets/./images/./pyramid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     width: 900px;
     display: grid;
     grid-template-columns: 1fr;
@@ -29,7 +34,6 @@
       display: grid;
       justify-content: center;
       margin-top: 2px;
-      // margin-bottom: 10px;
 
       color: rgba(16, 15, 15, 0.745);
       opacity: 0.8;
@@ -39,13 +43,18 @@
       }
     }
   }
-  .label p {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    flex-direction: row;
-    grid-template-rows: 1fr 1fr 1fr;
-    color: rgb(80, 146, 239);
-    font-size: 5em;
-  }
+}
+.label {
+  color: rgb(255, 238, 46);
+  font-size: 6.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+.sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

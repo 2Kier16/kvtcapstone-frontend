@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Pyramid from "../../../static/assets/images/pyramid.png";
 // import ContactForm from "../../components/form/ContactForm";
 import Pic from "../../../static/assets/images/egypt6.jpg";
 import { SiLinkedin, SiFacebook, SiInstagram } from "react-icons/si";
@@ -18,16 +17,7 @@ export default class contacts extends Component {
         }}
       >
         <div className="pyramid">
-          <div
-            className="triangle"
-            img
-            style={{
-              background: `url(${Pyramid}) no-repeat`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundBlend: "screen-shadow",
-            }}
-          >
+          <div className="triangle">
             <div className="icons">
               <div className="react-icon">
                 <p>

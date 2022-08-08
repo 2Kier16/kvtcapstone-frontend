@@ -16,14 +16,12 @@
   }
 
   .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
     .pyramid {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-    }
-    .triangle {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -53,6 +51,41 @@
     }
   }
 
+  .animated_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .infoListContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  .add-interest-form {
+    &-textarea {
+      grid-row: 1/5;
+      grid-column: 1/3;
+      border-radius: 4px;
+      height: 110px;
+      width: 239px;
+      border: 1px solid rgb(7, 102, 236);
+      font-size: 1.5rem;
+      outline: none;
+      padding: 28px;
+    }
+
+    &-button {
+      grid-row: 6/6;
+      grid-column: 2/3;
+      background-color: #93bcdb;
+      margin-top: 5px;
+      border-radius: 2px;
+      transition: 0.3s ease-in-out;
+    }
+  }
   .navbar {
     &-links {
       padding: 5px;
@@ -64,68 +97,4 @@
       grid-template-columns: 1fr;
     }
   }
-
-  .animated_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  // .interest-container {
-  //   flex-direction: column;
-  //   height: 1300px;
-  //   .left-column {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //   }
-  // }
 }
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-// @media screen and (max-width: 600px) {
-//   .bio-page-wrapper {
-//     flex-direction: column;
-//     height: 800px;
-//     .leftSide-column,
-//     .rightSide-column {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//     }
-//   }
-//   .animated_container {
-//     flex-direction: column;
-//     height: 1300px;
-//     img {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//     }
-//   }
-//   .knavigation-hub {
-//     flex-direction: column;
-//     height: 1300px;
-//     .items-list {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//     }
-//   }
-//   .interest-container {
-//     flex-direction: column;
-//     height: 1300px;
-//     .left-column {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//     }
-//   }
-// }

@@ -41,7 +41,7 @@ export default class home extends Component {
             </figure>
 
             <a className="btn btn-sm" href="/interests" title="Interest">
-              <TiPointOfInterest /> Visiter Info
+              <TiPointOfInterest /> Visitors Spot
             </a>
           </div>
           <div className="item col-r">
@@ -54,6 +54,13 @@ export default class home extends Component {
               K'Innovation
             </a>
           </div>
+          <audio
+            controls
+            autoPlay={true}
+            src="smile.mp3"
+            className="sound"
+            type="audio/mp3"
+          />
         </div>
       </div>
     );

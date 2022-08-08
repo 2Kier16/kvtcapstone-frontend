@@ -11,7 +11,7 @@ export default class contacts extends Component {
         className="contact-container"
         style={{
           width: "100%",
-          background: "url(" + Pic + ") no-repeat",
+          background: `url(${Pic}) no-repeat`,
           backgroundBlend: "screen",
           backgroundSize: "cover",
           backgroundPosition: "cover",
@@ -20,16 +20,14 @@ export default class contacts extends Component {
         <div className="pyramid">
           <div
             className="triangle"
+            img
             style={{
-              background: "url(" + Pyramid + ") no-repeat",
+              background: `url(${Pyramid}) no-repeat`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundBlend: "screen-shadow",
             }}
           >
-            {/* <div className="picture">
-              <img src="../../../static/assets/images/pyramid.png"></img>
-            </div> */}
             <div className="icons">
               <div className="react-icon">
                 <p>
@@ -58,6 +56,14 @@ export default class contacts extends Component {
           </div> */}
           </div>
           <div className="label">
+            <audio
+              controls
+              autoPlay={true}
+              volume={40}
+              src="nip.mp3"
+              className="sound"
+              type="audio/mp3"
+            />
             <p>Social Media Center</p>
           </div>
         </div>

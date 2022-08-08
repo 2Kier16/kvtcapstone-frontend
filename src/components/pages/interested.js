@@ -72,6 +72,14 @@ export default class Interests extends Component {
           <div className="title">
             <a>Visitors</a>
           </div>
+          <audio
+            controls
+            autoPlay={true}
+            volume={40}
+            src="bigband.mp3"
+            className="sound"
+            type="audio/mp3"
+          />
           <div className="information">{this.renderInterests()} </div>
         </div>
       </div>

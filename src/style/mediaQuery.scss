@@ -1,42 +1,78 @@
-@media (min-width: 576px) and (max-width: 1399.98px) {
-  // .bio-page-wrapper {
-  //   flex-direction: flex;
+@media (min-width: 384px) and (max-width: 991.98px) {
+  .knavigation-hub {
+    flex-direction: column;
+    height: 1500px;
+    .sound {
+      display: flex;
 
-  //   width: 100%;
-  //   .leftSide-column {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //   }
+      opacity: -1;
+    }
+    .items-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 
-  //   .rightSide-column {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //   }
-  // }
-  // .animated_container {
-  //   flex-direction: column;
-  //   height: 1300px;
-  //   img {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //   }
-  // }
-  // .knavigation-hub {
-  //   flex-direction: column;
-  //   height: 1300px;
-  //   .items-list {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //   }
-  // }
+  .contact-container {
+    flex-direction: column;
+    .pyramid {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .triangle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  .bio-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .rightSide-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+
+    .leftSide-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .navbar {
+    &-links {
+      padding: 5px;
+      margin-top: -122.5px;
+      height: 110px;
+      width: 120px;
+      gap: 2.5px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .animated_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
   // .interest-container {
   //   flex-direction: column;
   //   height: 1300px;
@@ -47,16 +83,49 @@
   //     flex-direction: column;
   //   }
   // }
-  // .navbar {
-  //   &-links {
-  //     padding: 5px;
-  //     margin-top: -122.5px;
-  //     height: 110px;
-  //     width: 120px;
-  //     gap: 2.5px;
-
-  //     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  //     grid-template-columns: 1fr;
-  //   }
-  // }
 }
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+// @media screen and (max-width: 600px) {
+//   .bio-page-wrapper {
+//     flex-direction: column;
+//     height: 800px;
+//     .leftSide-column,
+//     .rightSide-column {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//     }
+//   }
+//   .animated_container {
+//     flex-direction: column;
+//     height: 1300px;
+//     img {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//     }
+//   }
+//   .knavigation-hub {
+//     flex-direction: column;
+//     height: 1300px;
+//     .items-list {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//     }
+//   }
+//   .interest-container {
+//     flex-direction: column;
+//     height: 1300px;
+//     .left-column {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//     }
+//   }
+// }

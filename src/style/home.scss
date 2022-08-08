@@ -1,5 +1,5 @@
 .knavigation-hub {
-  height: 100vh;
+  height: 120vh;
   background-color: grayscale($color: #1f1f1f);
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@
     grid-column: 1;
   }
 }
+
 .btn {
   text-decoration: none;
   color: #b58be9;
@@ -47,6 +48,11 @@
   width: 30.5%;
   float: left;
   margin: 14px;
+}
+.sound {
+  margin: 0;
+  padding: 0;
+  opacity: -1;
 }
 .col-r {
   grid-column: 2/3;

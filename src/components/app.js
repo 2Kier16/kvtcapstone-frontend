@@ -6,6 +6,14 @@ const App = () => {
     <div className="app">
       <div className="animated_container">
         <img src={AnimatedLogo} alt="k.gif" />
+        <audio
+          controls
+          autoPlay={true}
+          volume={40}
+          src="anime.mp3"
+          className="sound"
+          type="audio/mp3"
+        />
       </div>
     </div>
   );
